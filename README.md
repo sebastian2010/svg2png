@@ -332,6 +332,7 @@ If upgrading from a CommonJS version:
 - `config-local-sample.yml` - Sample configuration for local directory sources
 - `package.json` - Project configuration with ES modules support
 - `dist/` - Default output directory for generated PNG files
+- `ATTRIBUTION.md` - Detailed attribution and licensing information for icon sources
 
 ## Contributing
 
@@ -347,6 +348,23 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 If you encounter any issues or have feature requests, please [create an issue](https://github.com/sebastian2010/svg2png/issues) on GitHub.
 
+## Acknowledgments
+
+This tool enables conversion of icons from various sources. When using icons from external sources, please respect their respective licenses and attribution requirements:
+
+### Heroicons
+- **Source**: [Heroicons by Tailwind Labs](https://heroicons.com/)
+- **License**: MIT License
+- **Copyright**: © Tailwind Labs, Inc.
+- **Repository**: https://github.com/tailwindlabs/heroicons
+
+### Other Icon Sources
+When using other icon libraries (Feather Icons, Lucide, etc.), please check and comply with their respective licenses and attribution requirements.
+
+**Important**: The generated PNG files may be subject to the license terms of the original SVG sources. This tool does not grant additional rights to the icon content itself.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Note**: This license applies to the conversion tool itself, not to the icon content that may be processed by the tool.

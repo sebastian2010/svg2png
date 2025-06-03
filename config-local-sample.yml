@@ -1,6 +1,10 @@
 # SVG to PNG Converter Configuration - Local Directory (Local Sources)
 # Configuration for converting SVG files from local directories
 
+# IMPORTANT: When using icons from external sources, please respect their licenses.
+# Heroicons (used below) are licensed under MIT by Tailwind Labs, Inc.
+# See: https://github.com/tailwindlabs/heroicons/blob/master/LICENSE
+
 # List of SVG files to process (must exist in the local directories)
 icons:
   - computer-desktop.svg

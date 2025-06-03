@@ -1,6 +1,10 @@
 # SVG to PNG Converter Configuration - URL-based (Remote Sources)
 # Configuration for downloading and converting SVG files from remote URLs
 
+# IMPORTANT: When using icons from external sources, please respect their licenses.
+# Heroicons (used below) are licensed under MIT by Tailwind Labs, Inc.
+# See: https://github.com/tailwindlabs/heroicons/blob/master/LICENSE
+
 # List of SVG files to process
 icons:
   - computer-desktop.svg
@@ -22,12 +26,11 @@ sources:
   - source: "https://raw.githubusercontent.com/tailwindlabs/heroicons/refs/heads/master/optimized/24/outline/"
     suffix: "_outline"
   - source: "https://raw.githubusercontent.com/tailwindlabs/heroicons/refs/heads/master/optimized/24/solid/"
-    suffix: "_solid"
-  # Add other icon sources as needed:
+    suffix: "_solid"  # Add other icon sources as needed (check their license requirements):
   # - source: "https://raw.githubusercontent.com/feathericons/feather/master/icons/"
-  #   suffix: "_feather"
+  #   suffix: "_feather"  # MIT License
   # - source: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/"
-  #   suffix: "_lucide"
+  #   suffix: "_lucide"   # ISC License
 
 # General settings
 settings:
