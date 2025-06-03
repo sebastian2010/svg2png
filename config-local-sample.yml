@@ -1,0 +1,46 @@
+# SVG to PNG Converter Configuration - Local Directory (Local Sources)
+# Configuration for converting SVG files from local directories
+
+# List of SVG files to process (must exist in the local directories)
+icons:
+  - computer-desktop.svg
+  - exclamation-circle.svg
+  - bug-ant.svg
+  - key.svg
+  - video-camera.svg
+  - lock-closed.svg
+  - shield-check.svg
+  - user.svg
+  - user-group.svg
+  - shield-exclamation.svg
+  - bell-alert.svg
+  - question-mark-circle.svg
+
+# Sources for different icon types/styles (using local directories)
+# Each source includes both the path and the suffix for output files
+sources:
+  - source: "./icons/outline"
+    suffix: "_outline"
+  - source: "./icons/solid"
+    suffix: "_solid"
+  # Add more local directories as needed:
+  # - source: "./my-icons/custom"
+  #   suffix: "_custom"
+  # - source: "./brand-assets/icons"
+  #   suffix: "_branded"
+
+# General settings
+settings:
+  size: 80 # Size for square icons (width and height in pixels)
+  color: "#075db3" # Color to apply to icons (hex, named colors, rgb supported)
+  outputDirectory: "dist" # Directory where PNG files will be saved
+  
+  # Wide format settings (16:9 aspect ratio)
+  wide:
+    width: 320 # Width of wide format
+    height: 180 # Height of wide format
+    iconSize: 160 # Size of icon in wide format (must be <= min(width, height))
+    wideSuffix: "_wide" # Suffix to append to wide format filenames
+
+# Note: The script automatically detects whether sources are URLs or local directories.
+# Simply specify the path/URL in the sources section above.

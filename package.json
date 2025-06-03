@@ -1,0 +1,47 @@
+{
+  "name": "svg2png-converter",
+  "version": "1.0.0",
+  "description": "Convert SVG to PNG with customizable size and color",
+  "type": "module",
+  "keywords": [
+    "svg",
+    "png",
+    "convert",
+    "image"
+  ],
+  "homepage": "https://github.com/sebastian2010/svg2png#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastian2010/svg2png.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastian2010/svg2png/issues"
+  },
+  "author": "Sebastian",
+  "license": "MIT",
+  "scripts": {
+    "convert": "node svg2png.js",
+    "convert:local": "node svg2png.js --config config-local-sample.yml",
+    "convert:url": "node svg2png.js --config config-url-sample.yml",
+    "convert:verbose": "node svg2png.js --verbose",
+    "convert:parallel": "node svg2png.js --parallel",
+    "lint": "eslint svg2png.js",
+    "lint:fix": "eslint svg2png.js --fix",
+    "format": "prettier --write svg2png.js",
+    "format:check": "prettier --check svg2png.js",
+    "fix": "npm run lint:fix && npm run format",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "jsdom": "^26.1.0",
+    "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3"
+  }
+}
