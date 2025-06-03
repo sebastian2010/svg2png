@@ -47,8 +47,6 @@ npm install
 
 ## Usage
 
-## Usage
-
 ### Basic Usage
 
 ```bash
